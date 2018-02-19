@@ -1,0 +1,33 @@
+<html>
+<title> Welcome : EDA </title>
+  <meta charset="UTF-8">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./../manifest.json">
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+
+	</style>
+	<body>
+
+
+		<script>
+			function showNoti() {
+    Push.create('Alert notification', {
+        body: 'New Alert on list',
+        icon: '/images/icons/icon-96x96.png',
+        link: '/#',
+        timeout: 6000,
+        onClick: function () {
+            window.focus();
+            this.close();
+        }
+    });
+}
+		</script>
+ 		<script src="app.js"></script>
+        <script src="js/push.min.js"></script>
+	</body>
+
+</html>
